@@ -1,0 +1,75 @@
+<html>
+  <head>
+    <!--<input type="text" id="test"/><button id="btn">Generate Report</button>-->
+    <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap Login Form Template</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/form-elements.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+  </head>
+  <body>
+  <div class="row">
+                    <div class="col-sm-2">
+                       <img src="logo.png">
+                    </div>
+                    <div class="col-sm-8 text">
+                            <h1 class="header"><strong>FMCG Sales Company</strong><br></h1>
+                            <!--<div class="description">
+                                <p>
+                                    This is a free responsive login form made with Bootstrap.
+                                    Download it on <a href="http://azmind.com"><strong>AZMIND</strong></a>, customize and use it as you like!
+                                </p>
+                            </div>-->
+                        </div>
+                        </div>
+    <div id="barchart_material" style="width: 900px; height: 500px;"></div>
+     <div class="row">
+       <div class="col-sm-4 col-sm-offset-4">
+    <footer>
+        <script type="text/javascript" src="../php/under.js"></script>
+           <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript">
+         var json;
+           $.getJSON("reports.php",function(data){
+                    json=data;
+
+             });
+          google.charts.load('current', {'packages':['bar']});
+          google.charts.setOnLoadCallback(drawChart);
+
+          function drawChart() {
+            var data = google.visualization.arrayToDataTable(json);
+            var options = {
+              chart: {
+                title: 'Sales report',
+               // subtitle: 'Sales, Expenses, and Profit: 2014-2017',
+              },
+              bars: 'vertical' // Required for Material Bar Charts.
+            };
+
+            var chart = new google.charts.Bar(document.getElementById('barchart_material'));
+
+            chart.draw(data, options);
+          }
+        </script>
+
+
+
+    </footer>
+
+  </body>
+</html>
