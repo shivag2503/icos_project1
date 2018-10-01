@@ -40,8 +40,8 @@ Built with:
 
 
 ACKNOWLEDGEMENT:
-Thank to our mentors.
-Thank to IBM for providing this project.
+Thank to our mentors Mr. Sandeep Upadhya.
+Thank to IBM for providing this project and having such a nice experience.
 
 Link to Our Project OEP: 
 https://github.com/shivag2503/icos_project1/tree/master
