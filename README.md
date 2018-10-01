@@ -1,11 +1,12 @@
 # icos_project1
-sdlp
+
 SALES DATA LOGIN AND PERFORMANCE:
-The main objective of ìSALES DATA LOGIN AND PERFORMANCEî is to provide a facility to login and generate the performance report of sales data per product and per team.
+The main objective of ‚ÄúSALES DATA LOGIN AND PERFORMANCE‚Äù is to provide a facility to login and generate the performance report of sales data per product and per team.
+
 In this members sell their product and submit their sales product data report to team leader and admin. Then admin analysis the data and generate the report. 
 
 IDEA: 	
-For this we will provide different login IDís to sales person, team leader and super admin for performing different functionalities. 
+For this we will provide different login ID‚Äôs to sales person, team leader and super admin for performing different functionalities. 
 
 Role of Sales Person:
 1.	Login using the details given by institution.
@@ -15,7 +16,7 @@ Role of Sales Person:
 
 Role of Team Leader:
 1.	Login using the details given by institution.
-2.	Provide Login IDís to sales person.
+2.	Provide Login ID‚Äôs to sales person.
 3.	Check whether product is delivered or not.
 4.	Can view team member list.
 5.	Logout.
@@ -31,7 +32,7 @@ Role of Admin:
 Built with:
 1.	HTML5
 2.	PHP
-3.	CSS
+3.	CSS3
 4.	MySQLi
 5.	Bootstrap4
 6.	JavaScript
